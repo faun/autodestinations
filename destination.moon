@@ -3,3 +3,4 @@ export class Destination
 
   keywords_value: =>
     @keywords
+
