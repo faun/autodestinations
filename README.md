@@ -24,3 +24,6 @@ Install with luarocks:
     
     grunt watch
 
+# Credits
+
+Credit for the original idea and original lua code goes to [Cody Sims](https://github.com/codysims).
