@@ -12,9 +12,9 @@ describe "Destination", ->
     assert.truthy(destination)
 
   it "returns the value for keywords", ->
-    things = with Destination!
+    dest = with Destination!
       .keywords = "Folder Name"
-    assert.are.same(things\keywords_value!, "Folder Name")
+    assert.are.same(dest\keywords_value!, "Folder Name")
 
   it "accepts a table as the new argument", ->
     keys = {}
@@ -22,7 +22,7 @@ describe "Destination", ->
     keys['children'] = true
     keys['adults'] = true
 
-    things = with Destination!
+    dest = with Destination!
       .keywords = keys
 
-    assert.are.same(things\keywords_value!, keys)
+    assert.are.same(dest\keywords_value!, keys)
