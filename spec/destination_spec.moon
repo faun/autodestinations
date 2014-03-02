@@ -26,3 +26,13 @@ describe "Destination", ->
       .keywords = keys
 
     assert.are.same(dest\keywords_value!, keys)
+
+  it "parses the event names and returns the event hashtag", ->
+    keys = {}
+    keys['Robots and Vampires'] = true
+    keys[' #Family '] = true
+    keys['#Mountains'] = true
+    dest = with Destination!
+      .keywords = keys
+
+    assert.are.same(dest\hashtag!, "Family")
