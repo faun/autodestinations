@@ -1,4 +1,3 @@
-require("busted")
 require("moonscript")
 
 describe "Destination", ->
