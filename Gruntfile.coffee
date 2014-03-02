@@ -1,6 +1,4 @@
-# global module
 module.exports = (grunt) ->
-  "use strict"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-shell"
   grunt.loadNpmTasks 'grunt-clear'
@@ -17,5 +15,3 @@ module.exports = (grunt) ->
         options:
           stdout: true
           failOnError: true
-
-  return
