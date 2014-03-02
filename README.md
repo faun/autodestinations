@@ -1,10 +1,23 @@
 # Setup
 
-Install busted:
+Dependencies:
 
-    brew install luarocks
+* [Moonscript](http://moonscript.org/)
+
+Development dependencies:
+
+* [Luarocks](http://www.luarocks.org/en/Download)
+* [Busted](http://olivinelabs.com/busted/):
+
     luarocks install busted
 
-Testing:
+* [Grunt](http://gruntjs.com/)
 
-    busted
+## Testing:
+
+    grunt
+
+## Autotest:
+    
+    grunt watch
+
