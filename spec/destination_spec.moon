@@ -1,8 +1,6 @@
 require("busted")
 require("moonscript")
 
-package.path = "../src/?.lua;" .. package.path
-
 describe "Destination", ->
   setup ->
     export destination = require("destination")
