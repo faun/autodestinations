@@ -3,11 +3,13 @@ module.exports = (grunt) ->
   "use strict"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-shell"
+  grunt.loadNpmTasks 'grunt-clear'
   grunt.registerTask 'default', ['shell:busted']
   grunt.initConfig
     watch:
-      files: ["**/*.moon"]
-      tasks: ["shell:busted"]
+      all_moon_files:
+        files: ["*.moon", "spec/**/*_spec.moon", '!**/node_modules/**']
+        tasks: ["clear", "shell:busted"]
 
     shell:
       busted:
