@@ -1,3 +1,4 @@
+require("busted")
 require("moonscript")
 
 package.path = "../src/?.lua;" .. package.path
